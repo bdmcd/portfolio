@@ -58,6 +58,37 @@
             padding: 15px;
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        ul.flex-container {
+            list-style-type: none;
+        }
+
+        li.flex-item {
+            margin: 10px;
+            width: 200px;
+        }
+
+        .experience-company {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .experience-dates {
+            font-style: italic;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            padding: 10px
+        }
+
     </style>
 </head>
 
@@ -81,13 +112,37 @@
             <li>tagify</li>
         </ul>
         <h2>Experience</h2>
-        <ul>
-            <li>Mobile Application Developer @ Ping Pong Software (May 2013 - Aug 2014)</li>
-            <li>Research Assistant @ BYU FHTL (Sep 2014 - July 2015, Sep 2017 - Aug 2018)</li>
-            <li>Software Developer, Entrepreneur @ ControlAlt (Dec 2018 - Jul 2019)</li>
-            <li>Software Engineering Intern @ Legrand (Nov 2017 - Apr 2020)</li>
-            <li>Software Engineering Intern @ Awardco (Apr 2020 - Present)</li>
-            <li>Software Engineering Contractor @ Amatis (Sep 2020 - Present)</li>
+        <ul class="flex-container">
+            <li class="flex-item card">
+                <p class="experience-company">Ping Pong Software</p>
+                <p class="experience-title">Mobile Application Developer</p>
+                <p class="experience-dates">May 2013 - Aug 2014</p>
+            </li>
+            <li class="flex-item card">
+                <p class="experience-company">BYU FHTL</p>
+                <p class="experience-title">Research Assistant</p>
+                <p class="experience-dates">Sep 2014 - July 2015, Sep 2017 - Aug 2018</p>
+            </li>
+            <li class="flex-item card">
+                <p class="experience-company">ControlAlt Investing</p>
+                <p class="experience-title">Software Developer, Entrepreneur</p>
+                <p class="experience-dates">Dec 2018 - Jul 2019</p>
+            </li>
+            <li class="flex-item card">
+                <p class="experience-company">Legrand</p>
+                <p class="experience-title">Software Engineering Intern</p>
+                <p class="experience-dates">Nov 2017 - Apr 2020</p>
+            </li>
+            <li class="flex-item card">
+                <p class="experience-company">Awardco</p>
+                <p class="experience-title">Software Engineering Intern</p>
+                <p class="experience-dates">Apr 2020 - Present</p>
+            </li>
+            <li class="flex-item card">
+                <p class="experience-company">Amatis Controls</p>
+                <p class="experience-title">Software Engineering Contractor</p>
+                <p class="experience-dates">Sep 2020 - Present</p>
+            </li>
         </ul>
     </div>
 </body>
