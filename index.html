@@ -1,14 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Portfolio</title>
-    </head>
-    <body>
+
+<head>
+    <title>Portfolio</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #header li {
+            float: left;
+        }
+
+        #header li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #header li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: teal;
+            color: white;
+        }
+
+        .active:hover {
+            background-color: teal !important;
+            color: white !important;
+        }
+
+        #content-container {
+            margin: 12px;
+        }
+
+        h1, h2 {
+            color: #31454a;
+        }
+
+        .box-model {
+            margin: 5px;
+            border: 3px solid teal;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul id="header">
+        <li><a class="active" href="index.html">Portfolio</a></li>
+        <li><a href="https://linkedin.com/in/bdmcd">LinkedIn</a></li>
+        <li><a href="https://github.com/bdmcd">GitHub</a></li>
+    </ul>
+    <div id="content-container">
         <h1>My Portfolio</h1>
-        <a href="https://linkedin.com/in/bdmcd">LinkedIn</a> <a href="https://github.com/bdmcd">GitHub</a>
-        <hr/>
-        <h2>About Me</h2>
-        <p>My name is Brian McDaniel, I am a Senior in the CS program at BYU and I love coding cool things!</p>
+        <hr />
+        <div class="box-model">
+            <h2>About Me</h2>
+            <p>My name is Brian McDaniel, I am a Senior in the CS program at BYU and I love coding cool things!</p>
+        </div>
         <h2>Projects</h2>
         <ul>
             <li>crazy fast fibonacci calculator</li>
@@ -24,5 +89,7 @@
             <li>Software Engineering Intern @ Awardco (Apr 2020 - Present)</li>
             <li>Software Engineering Contractor @ Amatis (Sep 2020 - Present)</li>
         </ul>
-    </body>
+    </div>
+</body>
+
 </html>
